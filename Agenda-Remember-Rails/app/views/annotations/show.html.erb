@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @annotation %>
+
+<div>
+  <%= link_to "Edit this annotation", edit_annotation_path(@annotation) %> |
+  <%= link_to "Back to annotations", annotations_path %>
+
+  <%= button_to "Destroy this annotation", @annotation, method: :delete %>
+</div>

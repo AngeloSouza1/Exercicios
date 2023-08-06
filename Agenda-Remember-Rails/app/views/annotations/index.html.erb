@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Annotations</h1>
+
+<div id="annotations">
+  <% @annotations.each do |annotation| %>
+    <%= render annotation %>
+    <p>
+      <%= link_to "Show this annotation", annotation %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New annotation", new_annotation_path %>
