@@ -1,0 +1,18 @@
+<h1>Calculadora Simples</h1>
+
+<%= form_tag("/calculate", method: "get") do %>
+  <input type="number" name="num1" placeholder="Número 1">
+  <select name="operator">
+    <option>+</option>
+    <option>-</option>
+    <option>*</option>
+    <option>/</option>
+  </select>
+  <input type="number" name="num2" placeholder="Número 2">
+  <input type="submit" value="Calcular">
+<% end %>
+
+<% if @result %>
+  <h2>Resultado:</h2>
+  <p><%= @result %></p>
+<% end %>
