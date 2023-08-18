@@ -1,0 +1,5 @@
+<<h1>Tarefa: <%= @task.name %></h1>
+<p>Descrição: <%= @task.description %></p>
+<p>Status: <%= @task.completed ? 'Concluída' : 'Pendente' %></p>
+<%= link_to "Editar Tarefa", edit_task_path(@task) %>
+<%= link_to "Voltar para a Lista de Tarefas", tasks_path %>
