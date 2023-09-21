@@ -21,5 +21,3 @@ puts gato.miar
 puts gato.dormir
 puts gato.pular
 
-#polimorfismo
-
