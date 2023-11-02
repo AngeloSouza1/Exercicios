@@ -1,0 +1,17 @@
+<div class="text-center">
+  <h1 class="display-4"><%= link_to "New livro", new_livro_path %></h1>
+</div>
+
+<div class="row justify-content-center">
+  <% @livros.each do |livro| %>
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title"><%= livro.titulo %></h5>
+          <p class="card-text"><%= livro.autor %></p>
+          <a href="<%= livro_path(livro) %>" class="btn btn-primary">Ver Detalhes</a>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
